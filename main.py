@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 st.set_page_config(layout="wide")
 
 # Load the data
-df = pd.read_csv('/Users/kyledegrave/Downloads/export (8).csv')
+df = pd.read_csv('model_data.csv')
 
 df['percent_persons_contacted'] = (1 - df['percent_rank'])
 
