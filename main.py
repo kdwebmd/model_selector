@@ -11,8 +11,6 @@ st.set_page_config(layout="wide")
 # Load the data
 df = pd.read_csv('model_data.csv')
 
-df['percent_persons_contacted'] = (1 - df['percent_rank'])
-
 # Define function to compute metrics
 def compute_metrics(da, add_number=None, add_slider=None):
 
@@ -31,7 +29,7 @@ def compute_metrics(da, add_number=None, add_slider=None):
     if add_slider is not None:
         ds = da[da['percent_rank'] >= add_slider].reset_index(drop=True)
 
-        percent_persons_contacted = (1 - ds['percent_rank'].min())
+        percent_persons_contacted = ds['percent_persons_contacted'].max()
         number_persons_contacted = percent_persons_contacted * ds['market_size'].max()
         percent_patients_found = ds['percent_patients_found'].max()
         number_patients_found = ds['percent_patients_found'].max() * ds['market_size'].max() * ds['incidence_rate'].max()
@@ -61,7 +59,7 @@ da = df[(df['model'] == add_selectbox_model)].reset_index(drop=True)
 
 if add_selectbox_audience == 'Top Scoring':
 
-    add_number = st.sidebar.number_input('Number of Individuals', min_value=1,
+    add_number = st.sidebar.number_input('Number of Individuals', min_value=int(da['percent_persons_contacted'].min() * da['market_size'].max()),
                                       max_value=da['market_size'].max(),
                                       value=int(np.round(da['market_size'].max()/2)))
     add_slider = None
@@ -123,35 +121,3 @@ with col_2:
     fig.update_layout(showlegend=False)
 
     st.plotly_chart(fig, use_container_width=False)
-
-
-
-# models = {'PDI5_01': 'PDI5_01: Cardiology: Cardiology',
-#           'PDI4_11_02': 'PDI4_11_02: Oncology & Hematology: Breast Cancer',
-#           'PDI5_C_32': 'PDI5_C_32: Orthopedics: Knee Replacement',
-#           'PDI5_C_05': 'PDI5_C_05: Endocrinology: Type 2 Diabetes'}
-
-# ds = pd.DataFrame()
-
-# for i in models.keys():
-
-#     df = pd.read_excel('/Users/kyledegrave/Desktop/app_demo/model_data_raw.xlsx', sheet_name=i)
-
-#     da = df[8:].reset_index(drop=True)
-
-#     da.columns = da.iloc[0]
-
-#     da = da[2:].reset_index(drop=True)
-
-#     da.dropna(how='all', axis=1, inplace=True)
-
-#     da['model'] = i
-
-#     da['description'] = models[i]
-
-#     ds = pd.concat([ds, da], axis=0).reset_index(drop=True)
-
-# ds[['scored', 'events', 'incremental_scored', 'Incremental_events']] = \
-# ds[['scored', 'events', 'incremental_scored', 'Incremental_events']].astype(int)
-
-# ds.to_csv('/Users/kyledegrave/Desktop/app_demo/model_data_clean.csv', index=False)
