@@ -9,7 +9,8 @@ import plotly.graph_objects as go
 st.set_page_config(layout="wide")
 
 # Load the data
-df = pd.read_csv('model_data.csv')
+#df = pd.read_csv('model_data.csv')
+df = pd.read_csv('/Users/kyledegrave/Downloads/export (10).csv')
 
 # Define function to compute metrics
 def compute_metrics(da, add_number=None, add_slider=None):
@@ -27,13 +28,13 @@ def compute_metrics(da, add_number=None, add_slider=None):
         percentile_minimum = percent_persons_contacted
 
     if add_slider is not None:
-        ds = da[da['percent_rank'] >= add_slider].reset_index(drop=True)
+        ds = da[da['percentile'] >= add_slider].reset_index(drop=True)
 
         percent_persons_contacted = ds['percent_persons_contacted'].max()
         number_persons_contacted = percent_persons_contacted * ds['market_size'].max()
         percent_patients_found = ds['percent_patients_found'].max()
         number_patients_found = ds['percent_patients_found'].max() * ds['market_size'].max() * ds['incidence_rate'].max()
-        percentile_minimum = ds['percent_rank'].min()
+        percentile_minimum = ds['percentile'].min()
 
     return (percent_persons_contacted,
             number_persons_contacted,
