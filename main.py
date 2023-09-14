@@ -10,7 +10,7 @@ st.set_page_config(layout="wide")
 
 # Load the data
 #df = pd.read_csv('model_data.csv')
-df = pd.read_csv('/Users/kyledegrave/Downloads/export (10).csv')
+df = pd.read_csv('model_data.csv')
 
 # Define function to compute metrics
 def compute_metrics(da, add_number=None, add_slider=None):
