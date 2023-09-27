@@ -1,97 +1,304 @@
-Model,Category,Description
-PDI5_C_07A,Behavioral Health,Alcohol Toxicity
-PDI5_C_07B,Behavioral Health,Alcohol Abuse
-PDI5_C_18,Behavioral Health,Depression
-PDI5_C_32,Behavioral Health,ADHD
-PDI5_C_45,Behavioral Health,Schizophrenia
-PDI5_C_47,Behavioral Health,Bipolar Disorder
-PDI5_01,Cardiology,Cardiology
-PDI5_01_E,Cardiology,Cardiology Emergency
-PDI5_C_02,Cardiology,TAVR (Trans Aortic Valve Replacement)
-PDI5_C_26,Cardiology,Heart Disease
-PDI5_C_29,Cardiology,Hypertension
-PDI5_C_40,Cardiology,Atrial Fibrillation
-PDI5_PQI_07,Cardiology,Hypertension Admission
-PDI5_PQI_08,Cardiology,Heart Failure Admission
-PDI5_PQI_13,Cardiology,Angina Without Procedure Admission
-PDI5_05,Digestive Health,Digestive Health
-PDI5_05_E,Digestive Health,Digestive Health_Emergency Emergency
-PDI5_C_09,Digestive Health,Celiac Disease
-PDI5_C_13,Digestive Health,Constipation
-PDI5_C_16,Digestive Health,Crohn’s Disease
-PDI5_C_49,Digestive Health,Ulcerative Colitis
-PDI5_04,"Ear, Nose & Throat","Ear, Nose & Throat"
-PDI5_04_E,"Ear, Nose & Throat","Ear, Nose & Throat Emergency"
-PDI5_C_46,"Ear, Nose & Throat",Seasonal Allergies
-PDI5_03,Endocrinology,Endocrinology
-PDI5_03_E,Endocrinology,Endocrinology Emergency
-PDI5_C_05,Endocrinology,Type 2 Diabetes
-PDI5_C_10,Endocrinology,Cholesterol
-PDI5_C_19,Endocrinology,Diabetic Neuropathy/DNP
-PDI5_C_33,Endocrinology,Menopause
-PDI5_C_52,Endocrinology,Type 1 Diabetes
-PDI5_PQI_01,Endocrinology,Diabetes Short Term Complications Admission
-PDI5_PQI_03,Endocrinology,Diabetes Long Term Complications Admission
-PDI5_PQI_14,Endocrinology,Uncontrolled Diabetes Admission
-PDI5_PQI_16,Endocrinology,Diabetic Lower Extremity Amputation Admission
-PDI5_06,General Medicine,General Medicine
-PDI5_06_E,General Medicine,General Medicine Emergency
-PDI5_C_01,General Medicine,RA (Rheumatoid Arthritis)
-PDI5_C_06,General Medicine,Psoriasis
-PDI5_C_08,General Medicine,Lupus
-PDI5_C_12,General Medicine,Cold and Flu
-PDI5_C_20,General Medicine,Dupuytren's Contracture
-PDI5_C_25,General Medicine,Gout
-PDI5_C_27,General Medicine,Hepatitis C
-PDI5_C_28,General Medicine,HIV
-PDI5_C_41,General Medicine,Psoriatic Arthritis
-PDI5_C_44,General Medicine,Rosacea
-PDI5_PQI_02,General Medicine,Perforated Appendix
-PDI5_PQI_10,General Medicine,Dehydration Admission
-PDI5_10,Gynecology,Gynecology
-PDI5_10_E,Gynecology,Gynecology Emergency
-PDI5_C_48,Gynecology,Birth Control
-PDI5_08,Neurosciences,Neurosciences
-PDI5_08_E,Neurosciences,Neurosciences Emergency
-PDI5_C_03,Neurosciences,MS (Multiple Scleosis)
-PDI5_C_21,Neurosciences,Epilepsy
-PDI5_C_23,Neurosciences,Fibromyalgia
-PDI5_C_30,Neurosciences,Insomnia
-PDI5_C_34,Neurosciences,Migraine
-PDI5_C_35,Neurosciences,Alzheimer's disease
-PDI5_C_38,Neurosciences,Parkinson’s Disease
-PDI5_C_43,Neurosciences,RLS
-PDI5_09,Obstetrics,Obstetrics
-PDI5_09_E,Obstetrics,Obstetrics Emergency
-PDI5_11,Oncology & Hematology,Oncology hematology
-PDI5_11_E,Oncology & Hematology,Oncology hematology Emergency
-PDI5_C_15,Oncology & Hematology,Coping with Chemotherapy
-PDI5_C_39,Oncology & Hematology,Prostate Cancer
-PDI5_12,Ophthamology,Ophthamology
-PDI5_12_E,Ophthamology,Ophthamology Emergency
-PDI5_C_11,Ophthamology,Chronic Dry Eye Syndrome
-PDI5_13,Orthopedics,Orthopedics
-PDI5_13_E,Orthopedics,Orthopedics Emergency
-PDI5_C_04,Orthopedics,OA (Osteoarthrosis)
-PDI5_C_31,Orthopedics,Knee Replacement
-PDI5_C_37,Orthopedics,Osteoporosis
-PDI5_16,Pulmonology,Pulmonology
-PDI5_16_E,Pulmonology,Pulmonology Emergency
-PDI5_C_14,Pulmonology,COPD
-PDI5_C_36,Pulmonology,Asthma
-PDI5_PQI_05,Pulmonology,COPD or Asthma Older Adult Admission
-PDI5_PQI_11,Pulmonology,Bacterial Pneumonia Admission
-PDI5_PQI_15,Pulmonology,Asthma Young Adult Admission
-PDI5_14,Spine,Spine
-PDI5_14_E,Spine,Spine Emergency
-PDI5_C_42,Spine,Back Pain
-PDI5_23,Trauma,Trauma
-PDI5_23_E,Trauma,Trauma Emergency
-PDI5_19,Urology,Urology
-PDI5_19_E,Urology,Urology Emergency
-PDI5_C_22,Urology,Erectile Dysfunction
-PDI5_C_50,Urology,Urinary Incontinence/OAB
-PDI5_C_51,Urology,BPH/Enlarged Prostate
-PDI5_PQI_12,Urology,Urinary Tract Infection Admission
-PDI5_22,Vascular,Vascular
-PDI5_22_E,Vascular,Vascular Emergency
+model,model category,model subcategory
+PDI4_01_01_E, Cardiology, Medical Cardiology Emergency
+PDI4_01_01_I, Cardiology, Medical Cardiology Inpatient
+PDI4_01_01_O, Cardiology, Medical Cardiology Outpatient
+PDI4_01_02_I, Cardiology, Cardiac Surgical Procedures Inpatient
+PDI4_01_02_O, Cardiology, Cardiac Surgical Procedures Outpatient
+PDI4_01_03_E, Cardiology, Electrophysiology Emergency
+PDI4_01_03_I, Cardiology, Electrophysiology Inpatient
+PDI4_01_03_O, Cardiology, Electrophysiology Outpatient
+PDI4_01_06, Cardiology, Coronary Interventional Procedures
+PDI4_01_08, Cardiology, Thoracic
+PDI4_03_01_E, Endocrinology, Diabetes Emergency
+PDI4_03_01_I, Endocrinology, Diabetes Inpatient
+PDI4_03_01_O, Endocrinology, Diabetes Outpatient
+PDI4_03_02_I, Endocrinology, Other Endocrine Inpatient
+PDI4_03_02_O, Endocrinology, Other Endocrine Outpatient
+PDI4_03_03, Endocrinology, Nutrition
+PDI4_04_04_E, ENT, Other ENT Emergency
+PDI4_04_04_I, ENT, Other ENT Inpatient
+PDI4_04_04_O, ENT, Other ENT Outpatient
+PDI4_05_03_I, Digestive Health, Hepatobiliary/Pancreas Inpatient
+PDI4_05_03_O, Digestive Health, Hepatobiliary/Pancreas Outpatient
+PDI4_05_04, Digestive Health, Colorectal Cancer Screening
+PDI4_05_06_E, Digestive Health, Other Digestive Emergency
+PDI4_05_06_I, Digestive Health, Other Digestive Inpatient
+PDI4_05_06_O, Digestive Health, Other Digestive Outpatient
+PDI4_05_08_O, Digestive Health, Gallbladder Outpatient
+PDI4_06_04_E, General Medicine, Other General Med Emergency
+PDI4_06_04_I, General Medicine, Other General Med Inpatient
+PDI4_06_04_O, General Medicine, Other General Med Outpatient
+PDI4_06_05, General Medicine, Rheumatology
+PDI4_06_06_E, General Medicine, Infectious and Parasitic Emergency
+PDI4_06_06_I, General Medicine, Infectious and Parasitic Inpatient
+PDI4_06_06_O, General Medicine, Infectious and Parasitic Outpatient
+PDI4_06_07_E, General Medicine, Dermatology Emergency
+PDI4_06_07_I, General Medicine, Dermatology Inpatient
+PDI4_06_07_O, General Medicine, Dermatology Outpatient
+PDI4_07_01_I, General Surgery, Bariatric Surgery Inpatient
+PDI4_07_02, General Surgery, Reconstructive Surgery
+PDI4_07_03_I, General Surgery, Other General Surgery Inpatient
+PDI4_07_03_O, General Surgery, Other General Surgery Outpatient
+PDI4_08_01, Neurosciences, Sleep
+PDI4_08_02_I, Neurosciences, Stroke Inpatient
+PDI4_08_02_O, Neurosciences, Stroke Outpatient
+PDI4_08_03_E, Neurosciences, Outpatient Headache Emergency
+PDI4_08_03_O, Neurosciences, Outpatient Headache Outpatient
+PDI4_08_04, Neurosciences, Neurodegenerative Disorders
+PDI4_08_06_E, Neurosciences, General Neurology Emergency
+PDI4_08_06_I, Neurosciences, General Neurology Inpatient
+PDI4_08_06_O, Neurosciences, General Neurology Outpatient
+PDI4_08_07_I, Neurosciences, Neurosurgery Inpatient
+PDI4_08_08_I, Neurosciences, Seizure Inpatient
+PDI4_08_08_O, Neurosciences, Seizure Outpatient
+PDI4_09_01, Obstetrics, Antepartum
+PDI4_09_02_I, Obstetrics, Delivery Inpatient
+PDI4_09_03, Obstetrics, Abortion/Miscarriage
+PDI4_09_05_E, Obstetrics, Maternity Care Emergency
+PDI4_09_05_O, Obstetrics, Maternity Care Outpatient
+PDI4_10A, Hip fracture,
+PDI4_10B, Hip replacement/arthroplasty,
+PDI4_10C, Knee replacement/arthroplasty,
+PDI4_10D, Ankle replacement/arthroplasty,
+PDI4_10E, Shoulder replacement/arthroplasty,
+PDI4_10F, Hand/wrist/finger repair,
+PDI4_10G, Back and neck procedures,
+PDI4_10I, Sports medicine ortho injuries,
+PDI4_10_03_E, Gynecology, General Gynecology Emergency
+PDI4_10_03_O, Gynecology, General Gynecology Outpatient
+PDI4_10_04_O, Gynecology, Breast Cancer Screening Outpatient
+PDI4_10_05_O, Gynecology, Cervical Cancer Screening Outpatient
+PDI4_11P," Skin cancer/melanoma, basal cell, squamous cell",
+PDI4_11Q, Morbid obesity,
+PDI4_11_01, Oncology & Hematology, Colorectal Cancer
+PDI4_11_02, Oncology & Hematology, Breast Cancer
+PDI4_11_03, Oncology & Hematology, Male Genital Organ Cancer
+PDI4_11_04, Oncology & Hematology, Lung and Bronchial Cancer
+PDI4_11_06, Oncology & Hematology, Gynecological Cancer
+PDI4_11_07, Oncology & Hematology, Other Oncology
+PDI4_11_08, Oncology & Hematology, Hematology
+PDI4_12_02, Ophthalmology, Cataracts/Implants
+PDI4_12_03, Ophthalmology, General Ophthalmology
+PDI4_13_01_I, Orthopedics, Joint Replacement Inpatient
+PDI4_13_08, Orthopedics, Medical Orthopedics
+PDI4_13_09, Orthopedics, Surgical Orthopedic Procedures
+PDI4_14_02, Spine, Spine Surgery
+PDI4_14_03_E, Spine, Spine Medicine/Back Pain Emergency
+PDI4_14_03_O, Spine, Spine Medicine/Back Pain Outpatient
+PDI4_16B, Brain and other nervous system cancers,
+PDI4_16_01_E, Pulmonology, General Pulmonary Emergency
+PDI4_16_01_I, Pulmonology, General Pulmonary Inpatient
+PDI4_16_01_O, Pulmonology, General Pulmonary Outpatient
+PDI4_16_02_I, Pulmonology, COPD Inpatient
+PDI4_16_02_O, Pulmonology, COPD Outpatient
+PDI4_16_03_I, Pulmonology, Pneumonia Inpatient
+PDI4_16_03_O, Pulmonology, Pneumonia Outpatient
+PDI4_16_04_E, Pulmonology, Asthma/Bronchitis Emergency
+PDI4_16_04_I, Pulmonology, Asthma/Bronchitis Inpatient
+PDI4_16_04_O, Pulmonology, Asthma/Bronchitis Outpatient
+PDI4_19A, Sleep center,
+PDI4_19_01_I, Urology, Nephrology Inpatient
+PDI4_19_01_O, Urology, Nephrology Outpatient
+PDI4_19_02_E, Urology, General Urology Emergency
+PDI4_19_02_I, Urology, General Urology Inpatient
+PDI4_19_02_O, Urology, General Urology Outpatient
+PDI4_19_03, Urology, Male Genital Organs
+PDI4_20_01_O, Rehabilitation, Rehabilitation Outpatient
+PDI4_21A, ER non-compliance,
+PDI4_21_01_E, Behavioral Health, Mental Health Emergency
+PDI4_21_01_I, Behavioral Health, Mental Health Inpatient
+PDI4_21_01_O, Behavioral Health, Mental Health Outpatient
+PDI4_21_02_E, Behavioral Health, Substance Abuse Emergency
+PDI4_21_02_I, Behavioral Health, Substance Abuse Inpatient
+PDI4_21_02_O, Behavioral Health, Substance Abuse Outpatient
+PDI4_22_01_I, Vascular, General Vascular Inpatient
+PDI4_22_01_O, Vascular, General Vascular Outpatient
+PDI4_23_03, Trauma, Head Trauma
+PDI4_23_04_E, Trauma, General Trauma Emergency
+PDI4_23_04_I, Trauma, General Trauma Inpatient
+PDI4_23_04_O, Trauma, General Trauma Outpatient
+PDI4_3A, MI with PTCA/CABG (heart attack balloon/bypass),
+PDI4_3B, MI without PTCA/CABG,
+PDI4_3C, Angina pectoris with PTCA/CABG (chest pain balloon/bypass),
+PDI4_3D, Angina pectoris Without PTCA/CAGB,
+PDI4_3E, Arteriosclerotic cardiovascular disease,
+PDI4_3F, Arrhythmia/pacemaker,
+PDI4_3I, Carotid endarterectomy,
+PDI4_3J, Arterial vascular disease,
+PDI4_3L, Abdominal aortic aneurysm,
+PDI4_4A, Hypertensive heart disease,
+PDI4_4B, Congestive heart failure,
+PDI4_4C, Rheumatic heart disease,
+PDI4_4D, Valvular heart diseases,
+PDI4_6D, Kidney cancer,
+PDI4_7B, Inflammatory bowel disease,
+PDI4_7D, Stomach cancer,
+PDI4_7I, Pancreatic cancer,
+PDI4_7K, Gastroesophageal reflux disease (GERD),
+PDI4_8B, Cervical cancer,
+PDI4_8C, Ovarian cancer,
+PDI4_8D, Uterine cancer,
+PDI4_8E, Hysterectomy,
+PDI4_8I, Postmenopausal osteoporosis,
+PDI4_9A, Radical prostatectomy,
+PDI4_9B, Prostate cancer,
+PDI4_9C, TURP (transurethral prostatectomy) for BPH (benign prostatic hyperplasia),
+PDI4_E, Emergency,
+PDI4_I, Inpatient,
+PDI4_O, Outpatient,
+PDI4_R, Readmission,
+PDI4_R_01, Readmission, Acute Myocardial Infarction
+PDI4_R_02, Readmission, Coronary Artery Bypass Graft
+PDI4_R_03, Readmission, Chronic Obstructive Pulmonary Disease
+PDI4_R_04, Readmission, Heart Failure
+PDI4_R_05, Readmission, Percutaneous Coronary Intervention
+PDI4_R_06, Readmission, Pneumonia
+PDI5_01, Cardiology,
+PDI5_01_E, Cardiology Emergency,
+PDI5_03, Endocrinology,
+PDI5_03_E, Endocrinology Emergency,
+PDI5_04," Ear, Nose & Throat",
+PDI5_04_E," Ear, Nose & Throat Emergency",
+PDI5_05, Digestive Health,
+PDI5_05_E, Digestive Health Emergency,
+PDI5_06, General Medicine,
+PDI5_06_E, General Medicine Emergency,
+PDI5_08, Neurosciences,
+PDI5_08_E, Neurosciences Emergency,
+PDI5_09, Obstetrics,
+PDI5_09_E, Obstetrics Emergency,
+PDI5_10, Gynecology,
+PDI5_10_E, Gynecology Emergency,
+PDI5_11, Oncology hematology,
+PDI5_11_E, Oncology hematology Emergency,
+PDI5_12, Ophthalmology,
+PDI5_12_E, Ophthalmology Emergency,
+PDI5_13, Orthopedics,
+PDI5_13_E, Orthopedics Emergency,
+PDI5_14, Spine,
+PDI5_14_E, Spine Emergency,
+PDI5_16, Pulmonology,
+PDI5_16_E, Pulmonology Emergency,
+PDI5_19, Urology,
+PDI5_19_E, Urology Emergency,
+PDI5_22, Vascular,
+PDI5_22_E, Vascular Emergency,
+PDI5_23, Trauma,
+PDI5_23_E, Trauma Emergency,
+PDI5_C_09, Celiac Disease,
+PDI5_C_10, Cholesterol,
+PDI5_C_11, Chronic Dry Eye Syndrome,
+PDI5_C_12, Cold and Flu,
+PDI5_C_13, Constipation,
+PDI5_C_14, COPD,
+PDI5_C_15, Coping with Chemotherapy,
+PDI5_C_16, Crohn’s Disease,
+PDI5_C_18, Depression,
+PDI5_C_19, Diabetic Neuropathy/DNP,
+PDI5_C_20, Dupuytren's Contracture,
+PDI5_C_21, Epilepsy,
+PDI5_C_22, Erectile Dysfunction,
+PDI5_C_23, Fibromyalgia,
+PDI5_C_24, GERD,
+PDI5_C_25, Gout,
+PDI5_C_26, Heart Disease,
+PDI5_C_27, Hepatitis C,
+PDI5_C_28, HIV,
+PDI5_C_29, Hypertension,
+PDI5_C_30, Insomnia,
+PDI5_C_31, Knee Replacement,
+PDI5_C_32, ADHD,
+PDI5_C_33, Menopause,
+PDI5_C_34, Migraine,
+PDI5_C_35, Alzheimer's disease,
+PDI5_C_36, Asthma,
+PDI5_C_37, Osteoporosis,
+PDI5_C_38, Parkinson’s Disease,
+PDI5_C_40, Atrial Fibrillation,
+PDI5_C_41, Psoriatic Arthritis,
+PDI5_C_42, Back Pain,
+PDI5_C_43, RLS,
+PDI5_C_44, Rosacea,
+PDI5_C_45, Schizophrenia,
+PDI5_C_46, Seasonal Allergies,
+PDI5_C_47, Bipolar Disorder,
+PDI5_C_48, Birth Control,
+PDI5_C_49, Ulcerative Colitis,
+PDI5_C_50, Urinary Incontinence/OAB,
+PDI5_C_51, BPH/Enlarged Prostate,
+PDI5_C_52, Type 1 Diabetes,
+PDI5_PQI_01, Diabetes Short Term Complications Admission,
+PDI5_PQI_02, Perforated Appendix,
+PDI5_PQI_03, Diabetes Long Term Complications Admission,
+PDI5_PQI_05, COPD or Asthma Older Adult Admission,
+PDI5_PQI_07, Hypertension Admission,
+PDI5_PQI_08, Heart Failure Admission,
+PDI5_PQI_10, Dehydration Admission,
+PDI5_PQI_11, Bacterial Pneumonia Admission,
+PDI5_PQI_12, Urinary Tract Infection Admission,
+PDI5_PQI_13, Angina Without Procedure Admission,
+PDI5_PQI_14, Uncontrolled Diabetes Admission,
+PDI5_PQI_15, Asthma Young Adult Admission,
+PDI5_PQI_16, Diabetic Lower Extremity Amputation Admission,
+Service Line,Cardiology, Medical Cardiology
+Service Line,Cardiology, Cardiac Surgical Procedures
+Service Line,Cardiology, Electrophysiology
+Service Line,Cardiology, Coronary Interventional Procedures
+Service Line,Cardiology, Thoracic
+Service Line,Endocrinology, Diabetes
+Service Line,Endocrinology, Other Endocrine
+Service Line,Endocrinology, Nutrition
+Service Line,ENT, Head and Neck Surgery
+Service Line,ENT, Other ENT
+Service Line,Digestive Health, Hepatobiliary/Pancreas
+Service Line,Digestive Health, Colorectal Cancer Screening
+Service Line,Digestive Health, Other Digestive
+Service Line,Digestive Health, Gall Bladder
+Service Line,General Medicine, Other General Med
+Service Line,General Medicine, Rheumatology
+Service Line,General Medicine, Infectious and Parasitic
+Service Line,General Medicine, Dermatology
+Service Line,General Surgery, Bariatric Surgery
+Service Line,General Surgery, Reconstructive Surgery
+Service Line,General Surgery, Other General Surgery
+Service Line,Neurosciences, Sleep
+Service Line,Neurosciences, Stroke
+Service Line,Neurosciences, Outpatient Headache
+Service Line,Neurosciences, Neurodegenerative Disorders
+Service Line,Neurosciences, General Neurology
+Service Line,Neurosciences, Neurosurgery
+Service Line,Neurosciences, Seizure
+Service Line,Obstetrics, Antepartum
+Service Line,Obstetrics, Delivery
+Service Line,Obstetrics, Abortion/Miscarriage
+Service Line,Obstetrics, Maternity Care
+Service Line,Gynecology, General Gynecology
+Service Line,Gynecology, Breast Cancer Screening
+Service Line,Gynecology, Cervical Cancer Screening
+Service Line,Oncology & Hematology, Colorectal Cancer
+Service Line,Oncology & Hematology, Breast Cancer
+Service Line,Oncology & Hematology, Male Genital Organ Cancer
+Service Line,Oncology & Hematology, Lung and Bronchial Cancer
+Service Line,Oncology & Hematology, Gynecological Cancer
+Service Line,Oncology & Hematology, Other Oncology
+Service Line,Oncology & Hematology, Hematology
+Service Line,Ophthalmology, Cataracts/Implants
+Service Line,Ophthalmology, General Ophthamology
+Service Line,Orthopedics, Joint Replacement
+Service Line,Orthopedics, Medical Orthopedics
+Service Line,Orthopedics, Surgical Orthopedic Procedures
+Service Line,Spine, Spine Surgery
+Service Line,Spine, Spine Medicine/Back Pain
+Service Line,Pulmonology, General Pulmonary
+Service Line,Pulmonology, COPD
+Service Line,Pulmonology, Pneumonia
+Service Line,Pulmonology, Asthma/Bronchitis
+Service Line,Urology, Nephrology
+Service Line,Urology, General Urology
+Service Line,Urology, Male Genital Organs
+Service Line,Rehabilitation, Rehabilitation
+Service Line,Behavioral Health, Mental Health
+Service Line,Behavioral Health, Substance Abuse
+Service Line,Vascular, General Vascular
+Service Line,Trauma, Head Trauma
+Service Line,Trauma, General Trauma

@@ -64,7 +64,7 @@ st.markdown("""
     </style>""", unsafe_allow_html=True)
 # ---------------------------------- #
 
-# Define session state infor
+# Define session state info
 if 'submitted' not in st.session_state:
     st.session_state.submitted = False
 if 'codeset' not in st.session_state:
@@ -88,16 +88,19 @@ def compute_metrics(da, add_number=None, add_slider=None):
         number_patients_found = percent_patients_found * da['number_patients_found'].max()
         percentile_minimum = (1 - percent_persons_contacted)
 
+        ds = da[da['score'] >= percent_persons_contacted].reset_index(drop=True)
+
     if add_slider is not None:
-        ds = da[da['percentile'] >= add_slider].reset_index(drop=True)
+        ds = da[da['score'] >= add_slider]
 
         percent_persons_contacted = ds['percent_persons_contacted'].max()
         number_persons_contacted = ds['number_persons_contacted'].max()
         percent_patients_found = ds['percent_patients_found'].max()
         number_patients_found = ds['number_patients_found'].max()
-        percentile_minimum = ds['percentile'].min()
+        percentile_minimum = ds['score'].min()
 
-    return (percent_persons_contacted,
+    return (ds[-1:].reset_index(drop=True),
+            percent_persons_contacted,
             number_persons_contacted,
             percent_patients_found,
             number_patients_found,
@@ -120,7 +123,12 @@ def compute_suffix(x):
 # ---------------- #
 # Read in the Data #
 # ---------------- #
-df = pd.read_csv('model_data2.csv')
+@st.cache_data
+def read_dataset():
+    return pd.read_csv('model_data3.csv')
+
+df = read_dataset()
+
 
 tab_1, tab_2 = st.tabs(['Audience Insights', 'Available Models'])
 
@@ -154,15 +162,13 @@ with tab_1:
         # ------------------------------ #
         # Choose a Model by Service Line #
         # ------------------------------ #
-        service_line_names = df['service_line'].dropna().unique().tolist()
+        service_line_sub_names = df['service_line_sub'].dropna().unique().tolist()
 
-        add_selectbox_service_line = st.sidebar.selectbox('Select a service line', (service_line_names), index=None)
+        add_selectbox_service_line_sub = st.sidebar.selectbox('Select a service line', (service_line_sub_names), index=None)
 
-        if add_selectbox_service_line:
+        if add_selectbox_service_line_sub:
 
-            model_names = df[df['service_line'] == add_selectbox_service_line]['model'].unique().tolist()
-
-            add_selectbox_model_name = st.sidebar.selectbox('Select a model', (model_names), index=None)
+            add_selectbox_model_name = df[df['service_line_sub'] == add_selectbox_service_line_sub]['model'].unique().tolist()[0]
 
     elif add_selectbox_model_by in ['Diagnosis', 'Procedure', 'MS-DRG']:
 
@@ -198,9 +204,9 @@ with tab_1:
 
                 add_selectbox_model_name = st.sidebar.selectbox('Select best-matching model', (model_names), index=None)
 
-    # -------------------------------------------- #
-    # Once model is chosen, execute the code below #
-    # -------------------------------------------- #
+    # ---------------------------------------------- #
+    # Once a model is chosen, execute the code below #
+    # ---------------------------------------------- #
     if add_selectbox_model_name:
 
         add_selectbox_audience = st.sidebar.selectbox('Select audience by', ('Top Scoring', 'Risk Percentile'), index=None)
@@ -225,6 +231,7 @@ with tab_1:
         if add_slider or add_number:
 
             (
+                data,
                 percent_persons_contacted,
                 number_persons_contacted,
                 percent_patients_found,
@@ -265,15 +272,15 @@ with tab_1:
                 st.write("""<div class='PortMarker'/>""", unsafe_allow_html=True)
 
                 st.write('**Age and Gender Breakdown**')
-                create_figure_r1(percent_persons_contacted, percent_patients_found, da)
+                create_figure_r1(data)
 
                 st.write('**Household Income**')
-                create_figure_r1(percent_persons_contacted, percent_patients_found, da)
+                create_figure_r2(data)
 
 with tab_2:
 
-    dm = pd.read_csv('available_models.csv')[['Description', 'Category']]
+    dm = pd.read_csv('available_models.csv')
 
-    dm.columns = ['Model Name', 'Category']
+    dm.columns = ['Model', 'Model Category', 'Model Subcategory']
 
-    st.dataframe(dm, hide_index=True, width=800, height=850)
+    st.dataframe(dm, hide_index=True, height=850, use_container_width=True)
