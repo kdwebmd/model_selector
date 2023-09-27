@@ -1,0 +1,97 @@
+Model,Category,Description
+PDI5_C_07A,Behavioral Health,Alcohol Toxicity
+PDI5_C_07B,Behavioral Health,Alcohol Abuse
+PDI5_C_18,Behavioral Health,Depression
+PDI5_C_32,Behavioral Health,ADHD
+PDI5_C_45,Behavioral Health,Schizophrenia
+PDI5_C_47,Behavioral Health,Bipolar Disorder
+PDI5_01,Cardiology,Cardiology
+PDI5_01_E,Cardiology,Cardiology Emergency
+PDI5_C_02,Cardiology,TAVR (Trans Aortic Valve Replacement)
+PDI5_C_26,Cardiology,Heart Disease
+PDI5_C_29,Cardiology,Hypertension
+PDI5_C_40,Cardiology,Atrial Fibrillation
+PDI5_PQI_07,Cardiology,Hypertension Admission
+PDI5_PQI_08,Cardiology,Heart Failure Admission
+PDI5_PQI_13,Cardiology,Angina Without Procedure Admission
+PDI5_05,Digestive Health,Digestive Health
+PDI5_05_E,Digestive Health,Digestive Health_Emergency Emergency
+PDI5_C_09,Digestive Health,Celiac Disease
+PDI5_C_13,Digestive Health,Constipation
+PDI5_C_16,Digestive Health,Crohn’s Disease
+PDI5_C_49,Digestive Health,Ulcerative Colitis
+PDI5_04,"Ear, Nose & Throat","Ear, Nose & Throat"
+PDI5_04_E,"Ear, Nose & Throat","Ear, Nose & Throat Emergency"
+PDI5_C_46,"Ear, Nose & Throat",Seasonal Allergies
+PDI5_03,Endocrinology,Endocrinology
+PDI5_03_E,Endocrinology,Endocrinology Emergency
+PDI5_C_05,Endocrinology,Type 2 Diabetes
+PDI5_C_10,Endocrinology,Cholesterol
+PDI5_C_19,Endocrinology,Diabetic Neuropathy/DNP
+PDI5_C_33,Endocrinology,Menopause
+PDI5_C_52,Endocrinology,Type 1 Diabetes
+PDI5_PQI_01,Endocrinology,Diabetes Short Term Complications Admission
+PDI5_PQI_03,Endocrinology,Diabetes Long Term Complications Admission
+PDI5_PQI_14,Endocrinology,Uncontrolled Diabetes Admission
+PDI5_PQI_16,Endocrinology,Diabetic Lower Extremity Amputation Admission
+PDI5_06,General Medicine,General Medicine
+PDI5_06_E,General Medicine,General Medicine Emergency
+PDI5_C_01,General Medicine,RA (Rheumatoid Arthritis)
+PDI5_C_06,General Medicine,Psoriasis
+PDI5_C_08,General Medicine,Lupus
+PDI5_C_12,General Medicine,Cold and Flu
+PDI5_C_20,General Medicine,Dupuytren's Contracture
+PDI5_C_25,General Medicine,Gout
+PDI5_C_27,General Medicine,Hepatitis C
+PDI5_C_28,General Medicine,HIV
+PDI5_C_41,General Medicine,Psoriatic Arthritis
+PDI5_C_44,General Medicine,Rosacea
+PDI5_PQI_02,General Medicine,Perforated Appendix
+PDI5_PQI_10,General Medicine,Dehydration Admission
+PDI5_10,Gynecology,Gynecology
+PDI5_10_E,Gynecology,Gynecology Emergency
+PDI5_C_48,Gynecology,Birth Control
+PDI5_08,Neurosciences,Neurosciences
+PDI5_08_E,Neurosciences,Neurosciences Emergency
+PDI5_C_03,Neurosciences,MS (Multiple Scleosis)
+PDI5_C_21,Neurosciences,Epilepsy
+PDI5_C_23,Neurosciences,Fibromyalgia
+PDI5_C_30,Neurosciences,Insomnia
+PDI5_C_34,Neurosciences,Migraine
+PDI5_C_35,Neurosciences,Alzheimer's disease
+PDI5_C_38,Neurosciences,Parkinson’s Disease
+PDI5_C_43,Neurosciences,RLS
+PDI5_09,Obstetrics,Obstetrics
+PDI5_09_E,Obstetrics,Obstetrics Emergency
+PDI5_11,Oncology & Hematology,Oncology hematology
+PDI5_11_E,Oncology & Hematology,Oncology hematology Emergency
+PDI5_C_15,Oncology & Hematology,Coping with Chemotherapy
+PDI5_C_39,Oncology & Hematology,Prostate Cancer
+PDI5_12,Ophthamology,Ophthamology
+PDI5_12_E,Ophthamology,Ophthamology Emergency
+PDI5_C_11,Ophthamology,Chronic Dry Eye Syndrome
+PDI5_13,Orthopedics,Orthopedics
+PDI5_13_E,Orthopedics,Orthopedics Emergency
+PDI5_C_04,Orthopedics,OA (Osteoarthrosis)
+PDI5_C_31,Orthopedics,Knee Replacement
+PDI5_C_37,Orthopedics,Osteoporosis
+PDI5_16,Pulmonology,Pulmonology
+PDI5_16_E,Pulmonology,Pulmonology Emergency
+PDI5_C_14,Pulmonology,COPD
+PDI5_C_36,Pulmonology,Asthma
+PDI5_PQI_05,Pulmonology,COPD or Asthma Older Adult Admission
+PDI5_PQI_11,Pulmonology,Bacterial Pneumonia Admission
+PDI5_PQI_15,Pulmonology,Asthma Young Adult Admission
+PDI5_14,Spine,Spine
+PDI5_14_E,Spine,Spine Emergency
+PDI5_C_42,Spine,Back Pain
+PDI5_23,Trauma,Trauma
+PDI5_23_E,Trauma,Trauma Emergency
+PDI5_19,Urology,Urology
+PDI5_19_E,Urology,Urology Emergency
+PDI5_C_22,Urology,Erectile Dysfunction
+PDI5_C_50,Urology,Urinary Incontinence/OAB
+PDI5_C_51,Urology,BPH/Enlarged Prostate
+PDI5_PQI_12,Urology,Urinary Tract Infection Admission
+PDI5_22,Vascular,Vascular
+PDI5_22_E,Vascular,Vascular Emergency
